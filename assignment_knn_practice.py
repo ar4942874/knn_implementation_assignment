@@ -34,8 +34,10 @@ customer_segmentation = pd.read_csv("D:\customer_segmentation.csv")
 # as trainig=850 and test=12 total 862 
 starting_value_training=862
 ending_value_training=1713
+starting_value_test=1713
+ending_value_test=1725
 train_data = customer_segmentation.iloc[starting_value_training:ending_value_training]  
-test_data = customer_segmentation.iloc[1713:1725]     
+test_data = customer_segmentation.iloc[starting_value_test:ending_value_test]     
 
 # testing values of k
 k_values = [1, 3, 5, 7]
